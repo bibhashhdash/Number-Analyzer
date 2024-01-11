@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Analyzer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="mode">
+      <div class="light-btn" onclick="light()">&#x2732;</div>
+      <div class="dark-btn" onclick="dark()">&#x2731;</div>
+    </div>
+    <div class="container">
+      <h1>Number Analyzer</h1>
+      <div class="inputbox">
+        <input
+          type="number"
+          autocomplete="off"
+          id="number"
+          placeholder="Enter any number"
+        />
+        <img src="warning.png" alt="" id="warning" />
+      </div>
+      <button id="btn1" onclick="Check()">Check</button>
+      <button id="btn2" onclick="Reset()">Reset</button>
+      <div class="outputbox">
+        <div class="box">
+          <p>Armstrong Number</p>
+          <p id="Armstrong_cross">&#x274C;</p>
+          <p id="Armstrong_check" class="chk">&#x2714;</p>
+        </div>
+        <div class="box">
+          <p>Palindrome Number</p>
+          <p id="Palindrome_cross">&#x274C;</p>
+          <p id="Palindrome_check" class="chk">&#x2714;</p>
+        </div>
+        <div class="box">
+          <p>Prime Number</p>
+          <p id="Prime_cross">&#x274C;</p>
+          <p id="Prime_check" class="chk">&#x2714;</p>
+        </div>
+        <div class="box">
+          <p>Spy Number</p>
+          <p id="Spy_cross">&#x274C;</p>
+          <p id="Spy_check" class="chk">&#x2714;</p>
+        </div>
+        <div class="box">
+          <p>Special Number</p>
+          <p id="Special_cross">&#x274C;</p>
+          <p id="Special_check" class="chk">&#x2714;</p>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <p>Created By Bibhash Dash</p>
+    </footer>
+  </body>
+</html>
